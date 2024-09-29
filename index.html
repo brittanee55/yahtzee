@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahtzee Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Yahtzee Game (Up to 4 Players)</h1>
+        <div id="rules">
+            <h2>Game Rules</h2>
+            <p>Welcome to Yahtzee! Gather up to 4 players and take turns rolling five dice.</p>
+            <p>The player with the highest total score after all rounds wins!</p>
+            <p>Each player will roll the dice and accumulate points based on their rolls.</p>
+            <p>To start, select the number of players (1 to 4) and then click "Start Game".</p>
+        </div>
+        <div id="playerSetup">
+            <label for="numPlayers">Number of Players:</label>
+            <input type="number" id="numPlayers" min="1" max="4" required>
+            <button id="startGame">Start Game</button>
+        </div>
+
+        <div id="gameArea" style="display:none;">
+            <div id="currentPlayer"></div>
+            <div id="diceContainer"></div>
+            <button id="rollDice">Roll Dice</button>
+            <div id="scoreBoard"></div>
+            <button id="nextPlayer" style="display:none;">Next Player</button>
+            <button id="finishGame" style="display:none;">Finish Game</button>
+            <button id="resetGame" style="display:none;">Reset Game</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
